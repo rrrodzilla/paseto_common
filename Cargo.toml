@@ -15,6 +15,24 @@ categories = [
   "cryptography",
   "authentication",
 ]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+v1 = []
+v2 = []
+v3 = []
+v4 = []
+public = []
+local = []
+v1_local = ["v1", "local"]
+v2_local = ["v2", "local"]
+v3_local = ["v3", "local"]
+v4_local = ["v4", "local"]
+v1_public = ["v1", "public"]
+v2_public = ["v2", "public"]
+v3_public = ["v3", "public"]
+v4_public = ["v4", "public"]
+default = ["v3_public", "v3_local", "v4_local", "v4_public"]
 
 [dependencies]
 hex = { version = "^0.4.3", optional = false }
