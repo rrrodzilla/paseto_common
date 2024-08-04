@@ -6,7 +6,7 @@ license = "MIT OR Apache-2.0"
 description = "Common types for PASETO protocol versions, and purposes. Used by the rusty_paseto family of crates."
 homepage = "https://github.com/rrrodzilla/paseto_common"
 repository = "https://github.com/rrrodzilla/paseto_common"
-authors = ["Roland Rodriguez <rrrodzilla@proton.me>"]
+authors = ["Roland Rodriguez <roland@govcraft.ai>"]
 keywords = ["paseto", "paserk", "security", "cryptography", "authentication"]
 categories = [
     "encoding",
