@@ -22,7 +22,7 @@
 //! Import the prelude to access PASETO types:
 //!
 //! ```
-//! use paseto_common::prelude::{purposes, versions};
+//! use paseto_common::prelude::*;
 //! ```
 
 #![deny(missing_docs)]
@@ -32,16 +32,20 @@ mod purpose;
 mod traits;
 
 mod version;
+/// Prelude module for convenient importing of common PASETO types.
+pub mod purposes {
+    pub use crate::purpose::{Local, Public, PurposeTrait};
+}
+
+/// Prelude module for convenient importing of common PASETO types.
+pub mod versions {
+    pub use crate::version::{Modern, Nist, Sodium, V1, V2, V3, V4, VersionTrait};
+}
 
 /// Prelude module for convenient importing of common PASETO types.
 pub mod prelude {
     /// Re-exports PASETO purpose types and traits.
-    pub mod purposes {
-        pub use crate::purpose::{Local, Public, PurposeTrait};
-    }
-
+    pub use crate::purpose::*;
     /// Re-exports PASETO version types and traits.
-    pub mod versions {
-        pub use crate::version::{Modern, Nist, Sodium, V1, V2, V3, V4, VersionTrait};
-    }
+    pub use crate::version::*;
 }
