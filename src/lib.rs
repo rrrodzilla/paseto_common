@@ -32,6 +32,10 @@ mod purpose;
 mod traits;
 
 mod version;
+mod header;
+mod footer;
+mod implicit_assertion;
+
 /// Prelude module for convenient importing of common PASETO types.
 pub mod purposes {
     pub use crate::purpose::{Local, Public, PurposeTrait};
@@ -45,7 +49,10 @@ pub mod versions {
 /// Prelude module for convenient importing of common PASETO types.
 pub mod prelude {
     /// Re-exports PASETO purpose types and traits.
-    pub use crate::purpose::*;
+    pub use super::header::*;
+    pub use super::footer::*;
+    pub use super::implicit_assertion::*;
+    pub use super::purpose::*;
     /// Re-exports PASETO version types and traits.
-    pub use crate::version::*;
+    pub use super::version::*;
 }
