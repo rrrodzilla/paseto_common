@@ -1,6 +1,7 @@
-use crate::traits::*;
 use std::fmt;
 use std::fmt::Display;
+
+use crate::version::VersionTrait;
 
 /// ## Version 1: NIST Compatibility
 ///

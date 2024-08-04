@@ -1,6 +1,7 @@
-use crate::traits::*;
 use std::fmt;
 use std::fmt::Display;
+
+use crate::version::VersionTrait;
 
 /// ## Version 2: Sodium Original
 ///
