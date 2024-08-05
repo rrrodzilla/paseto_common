@@ -1,7 +1,7 @@
 use std::fmt;
 use std::fmt::Display;
 
-use crate::version::{Modern, VersionTrait};
+use crate::version::VersionTrait;
 
 /// ## Version 4: Sodium Modern
 ///
@@ -25,7 +25,6 @@ use crate::version::{Modern, VersionTrait};
 #[derive(Debug, Clone, Copy)]
 pub struct V4(&'static str);
 impl VersionTrait for V4 {}
-impl Modern for V4 {}
 impl AsRef<str> for V4 {
     fn as_ref(&self) -> &str {
         self.0

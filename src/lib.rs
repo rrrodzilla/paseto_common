@@ -43,7 +43,7 @@ pub mod purposes {
 
 /// Prelude module for convenient importing of common PASETO types.
 pub mod versions {
-    pub use crate::version::{Modern, Nist, Sodium, V1, V2, V3, V4, VersionTrait};
+    pub use crate::version::{Modern, Legacy, Nist, Sodium, V1, V2, V3, V4, VersionTrait};
 }
 
 /// Prelude module for convenient importing of common PASETO types.

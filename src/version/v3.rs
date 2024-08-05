@@ -1,7 +1,7 @@
 use std::fmt;
 use std::fmt::Display;
 
-use crate::version::{Modern, VersionTrait};
+use crate::version::VersionTrait;
 
 /// ## Version 3: NIST Modern
 ///
@@ -34,7 +34,6 @@ impl AsRef<str> for V3 {
         self.0
     }
 }
-impl Modern for V3 {}
 impl Default for V3 {
     fn default() -> Self {
         Self("v3")
